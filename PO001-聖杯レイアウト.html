@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-size: 2rem;
+        width: 800px;
+        margin: 0 auto;
+        /* 最小高度視窗高 */
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+      header {
+        height: 150px;
+      }
+      div {
+        display: flex;
+        /* 撐滿剩餘部分，同時不佔據其他元素的寬 */
+        flex: 1;
+      }
+      main {
+        flex: 1;
+      }
+      nav {
+        width: 150px;
+      }
+      aside {
+        width: 200px;
+      }
+      footer {
+        height: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <header></header>
+    <div>
+      <nav>left</nav>
+      <main>center</main>
+      <aside>right</aside>
+    </div>
+    <footer></footer>
+  </body>
+</html>
